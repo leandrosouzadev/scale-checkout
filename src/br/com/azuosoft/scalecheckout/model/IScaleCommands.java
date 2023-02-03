@@ -1,4 +1,4 @@
-package br.com.azuosoft.balancacheckout.model;
+package br.com.azuosoft.scalecheckout.model;
 
 /**
  *

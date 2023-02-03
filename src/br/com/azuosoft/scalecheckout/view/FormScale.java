@@ -1,6 +1,6 @@
-package br.com.azuosoft.balancacheckout.view;
+package br.com.azuosoft.scalecheckout.view;
 
-import br.com.azuosoft.balancacheckout.controller.ScaleController;
+import br.com.azuosoft.scalecheckout.controller.ScaleController;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;

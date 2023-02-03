@@ -1,10 +1,10 @@
-package br.com.azuosoft.balancacheckout.model;
+package br.com.azuosoft.scalecheckout.model;
 
 /**
  *
  * @author Leandro
  */
-public class ElginCommands implements IScaleCommands {
+public class FilizolaCommands implements IScaleCommands {
 
     @Override
     public byte[] getWeight() {

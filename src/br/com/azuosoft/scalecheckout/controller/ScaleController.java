@@ -1,8 +1,8 @@
-package br.com.azuosoft.balancacheckout.controller;
+package br.com.azuosoft.scalecheckout.controller;
 
-import br.com.azuosoft.balancacheckout.model.ScaleModelType;
-import br.com.azuosoft.balancacheckout.service.ScaleService;
-import br.com.azuosoft.balancacheckout.service.SerialComPort;
+import br.com.azuosoft.scalecheckout.model.ScaleModelType;
+import br.com.azuosoft.scalecheckout.service.ScaleService;
+import br.com.azuosoft.scalecheckout.service.SerialComPort;
 import java.util.Arrays;
 import java.util.List;
 

@@ -13,3 +13,5 @@ build/classes/br/com/azuosoft/balancacheckout/model/FilizolaCommands.class
 build/classes/br/com/azuosoft/balancacheckout/model/ElginCommands.class
 build/classes/br/com/azuosoft/balancacheckout/controller/ScaleController.class
 build/classes/.netbeans_update_resources
+*.class
+build/classes/br/com/azuosoft/scalecheckout/view/FormScale.form

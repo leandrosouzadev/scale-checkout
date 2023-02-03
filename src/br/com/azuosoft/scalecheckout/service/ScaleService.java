@@ -1,8 +1,8 @@
-package br.com.azuosoft.balancacheckout.service;
+package br.com.azuosoft.scalecheckout.service;
 
-import br.com.azuosoft.balancacheckout.model.ScaleModelType;
-import br.com.azuosoft.balancacheckout.model.ElginCommands;
-import br.com.azuosoft.balancacheckout.model.FilizolaCommands;
+import br.com.azuosoft.scalecheckout.model.ScaleModelType;
+import br.com.azuosoft.scalecheckout.model.ElginCommands;
+import br.com.azuosoft.scalecheckout.model.FilizolaCommands;
 import gnu.io.CommPortIdentifier;
 import gnu.io.NoSuchPortException;
 import gnu.io.PortInUseException;
@@ -16,8 +16,8 @@ import java.io.OutputStream;
 import java.util.TooManyListenersException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
-import br.com.azuosoft.balancacheckout.model.IScaleCommands;
-import br.com.azuosoft.balancacheckout.model.ToledoCommands;
+import br.com.azuosoft.scalecheckout.model.IScaleCommands;
+import br.com.azuosoft.scalecheckout.model.ToledoCommands;
 
 /**
  *
@@ -129,12 +129,13 @@ public class ScaleService {
         return stringBuilder;
     }
 
-    private void checkReturn() {
-        obtainedValue = obtainedValue.replaceAll("\\D", "");
-        checkReturnObtained(obtainedValue);
+    private void checkReturn() {        
         checkOverweight(obtainedValue);
         checkUnstableWeight(obtainedValue);
         checkNegativeweight(obtainedValue);
+        
+        obtainedValue = obtainedValue.replaceAll("\\D", "");
+        checkReturnObtained(obtainedValue);
     }
 
     private void checkReturnObtained(String value) {
@@ -144,19 +145,19 @@ public class ScaleService {
     }
 
     private void checkOverweight(String value) {
-        if (value.contains("SSSSS")) {
+        if (value != null && value.contains("SSSSS")) {
             throw new RuntimeException("A balança está com pesso além da capacidade.");
         }
     }
 
     private void checkUnstableWeight(String value) {
-        if (value.contains("IIIII")) {
+        if (value != null && value.contains("IIIII")) {
             throw new RuntimeException("A balança está com o pesso instável.");
         }
     }
 
     private void checkNegativeweight(String value) {
-        if (value.contains("NNNNN")) {
+        if (value != null && value.contains("NNNNN")) {
             throw new RuntimeException("A balança está com o pesso negativo.");
         }
     }

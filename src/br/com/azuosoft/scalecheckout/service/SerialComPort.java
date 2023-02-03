@@ -1,4 +1,4 @@
-package br.com.azuosoft.balancacheckout.service;
+package br.com.azuosoft.scalecheckout.service;
 
 import gnu.io.CommPortIdentifier;
 import java.util.ArrayList;
