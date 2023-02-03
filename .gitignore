@@ -1,0 +1,15 @@
+
+build/classes/.netbeans_automatic_build
+build/classes/br/com/azuosoft/balancacheckout/view/FormScale.form
+build/classes/br/com/azuosoft/balancacheckout/view/FormScale.class
+build/classes/br/com/azuosoft/balancacheckout/view/FormScale$1.class
+build/classes/br/com/azuosoft/balancacheckout/service/SerialComPort.class
+build/classes/br/com/azuosoft/balancacheckout/service/ScaleService.class
+build/classes/br/com/azuosoft/balancacheckout/service/ScaleService$1.class
+build/classes/br/com/azuosoft/balancacheckout/model/ScaleModelType.class
+build/classes/br/com/azuosoft/balancacheckout/model/ToledoCommands.class
+build/classes/br/com/azuosoft/balancacheckout/model/IScaleCommands.class
+build/classes/br/com/azuosoft/balancacheckout/model/FilizolaCommands.class
+build/classes/br/com/azuosoft/balancacheckout/model/ElginCommands.class
+build/classes/br/com/azuosoft/balancacheckout/controller/ScaleController.class
+build/classes/.netbeans_update_resources
